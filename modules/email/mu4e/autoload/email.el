@@ -209,9 +209,7 @@ is tomorrow.  With two prefixes, select the deadline."
                               (truncate-string-to-width
                                (plist-get msg :subject) 40 nil nil t)
                               "]] "))
-              (org-deadline nil
-                            (cond ((= arg 1) (format-time-string "%Y-%m-%d"))
-                                  ((= arg 4) "+1d")))
+
 
               (org-update-parent-todo-statistics)
 
